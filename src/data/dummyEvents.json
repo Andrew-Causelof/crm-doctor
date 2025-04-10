@@ -1,0 +1,124 @@
+[
+    {
+        "date": "2024-12-04",
+        "events": [
+            {   "record_id": 123,
+                "time": "14:30",
+                "user": {
+                  "id": 2,
+                  "name": "Добронравов Олег Робертович"
+                },
+                "type": "document_upload",
+                "title": "Биохимический анализ крови",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": false
+            },
+            {
+                "record_id": 124,
+                "time": "14:10",
+                "user": {
+                  "id": 3,
+                  "name": "Ворнава Ирина Ионовна"
+                },
+                "type": "document_upload",
+                "title": "Денситометрия поясничного отдела и тазобедренных суставов",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": false
+            },
+            {
+                "record_id": 125,
+                "time": "14:10",
+                "user": {
+                  "id": 2,
+                  "name": "Добронравов Олег Робертович"
+                },
+                "type": "document_upload",
+                "title": "Общий анализ крови",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": true
+            } 
+        ]
+    },
+    {
+        "date": "2024-12-03",
+        "events": [
+            {
+                "record_id": 126,
+                "time": "14:30",
+                "user": {
+                  "id": 2,
+                  "name": "Добронравов Олег Робертович"
+                },
+                "type": "document_upload",
+                "title": "Биохимический анализ крови",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": false
+            },
+            {
+                "record_id": 127,
+                "time": "14:10",
+                "user": {
+                  "id": 3,
+                  "name": "Ворнава Ирина Ионовна"
+                },
+                "type": "document_upload",
+                "title": "Денситометрия поясничного отдела и тазобедренных суставов",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": false
+            },
+            {
+                "record_id": 128,
+                "time": "14:10",
+                "user": {
+                  "id": 2,
+                  "name": "Добронравов Олег Робертович"
+                },
+                "type": "document_upload",
+                "title": "Общий анализ крови",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": true
+            } 
+        ]
+    },
+    {
+        "date": "2024-12-02",
+        "events": [
+            {  
+                "record_id": 129,
+                "time": "14:30",
+                "user": {
+                  "id": 2,
+                  "name": "Добронравов Олег Робертович"
+                },
+                "type": "document_upload",
+                "title": "Биохимический анализ крови",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": false
+            },
+            {
+                "record_id": 120,
+                "time": "14:10",
+                "user": {
+                  "id": 3,
+                  "name": "Ворнава Ирина Ионовна"
+                },
+                "type": "document_upload",
+                "title": "Денситометрия поясничного отдела и тазобедренных суставов",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": false
+            },
+            {
+                "record_id": 121,
+                "time": "14:10",
+                "user": {
+                  "id": 2,
+                  "name": "Добронравов Олег Робертович"
+                },
+                "type": "document_upload",
+                "title": "Общий анализ крови",
+                "link": "https://spinelife.seo-gravity.ru/upload/uf/930/2u5xbah268dhdh3ts5xzgw5eojdys6sj.webp",
+                "read": true
+            } 
+        ]
+    }
+]

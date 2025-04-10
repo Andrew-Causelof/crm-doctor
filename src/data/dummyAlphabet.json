@@ -1,0 +1,84 @@
+ [
+    { 
+        "letter": "А", "selected": true, "available": true 
+    },
+    { 
+        "letter": "Б", "selected": false, "available": false 
+    },
+    { 
+        "letter": "В", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Г", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Д", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Е", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Ж", "selected": false, "available": false 
+    },
+    { 
+        "letter": "З", "selected": false, "available": false 
+    },
+    { 
+        "letter": "И", "selected": false, "available": false 
+    },
+    { 
+        "letter": "К", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Л", "selected": false, "available": false 
+    },
+    { 
+        "letter": "М", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Н", "selected": false, "available": true 
+    },
+    { 
+        "letter": "О", "selected": false, "available": false 
+    },
+    { 
+        "letter": "П", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Р", "selected": false, "available": false 
+    },
+    { 
+        "letter": "С", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Т", "selected": false, "available": true 
+    },
+    { 
+        "letter": "У", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Ф", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Х", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Ц", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Ч", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Ш", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Э", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Ю", "selected": false, "available": false 
+    },
+    { 
+        "letter": "Я", "selected": false, "available": false 
+    }
+]
+  
