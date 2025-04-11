@@ -6,11 +6,18 @@ import alphabetData from '../../data/dummyAlphabet.json';
 import EventsSearch from '../common/EventsSearch';
 import patientsData from '../../data/dummyPatients.json';
 import PatientsGroup from '../common/PatientsGroup';
-
 import { usePatientStore } from '../../store/patientStore';
 
 function PatientsList() {
-  const { fetchPatients, patients, loading, pagination } = usePatientStore();
+  const {
+    fetchPatients,
+    patients,
+    pagination,
+    loading,
+    letters,
+    selectedLetter,
+    selectLetter,
+  } = usePatientStore();
 
   useEffect(() => {
     fetchPatients(); // Загружаем сразу при входе
@@ -20,7 +27,26 @@ function PatientsList() {
     return <div>Загрузка пациентов...</div>;
   }
 
-  console.log(patients);
+  // Группируем пациентов по первой букве фамилии
+  const groupedPatients = patients.reduce((acc, patient) => {
+    const firstLetter = patient.lastName[0].toUpperCase();
+    if (!acc[firstLetter]) acc[firstLetter] = [];
+    acc[firstLetter].push(patient);
+    return acc;
+  }, {});
+
+  const groupedArray = Object.entries(groupedPatients).map(
+    ([letter, group]) => ({
+      letter,
+      patients: group,
+    })
+  );
+
+  const alphabetData = letters.map((letter) => ({
+    letter,
+    selected: selectedLetter === letter,
+    available: true,
+  }));
 
   return (
     <main className="main main-full">
@@ -28,11 +54,16 @@ function PatientsList() {
         <Breadcrumbs title="Все пациенты" />
         <div className="content_body">
           <div className="page_actions">
-            <AlphabetFilter data={alphabetData} />
+            <AlphabetFilter
+              availableLetters={letters} // <- буквы, за которыми есть пациенты
+              selectedLetter={selectedLetter} // <- выбранная буква
+              onSelect={selectLetter}
+            />
+
             <EventsSearch />
           </div>
 
-          {patientsData.map((group) => (
+          {groupedArray.map((group) => (
             <PatientsGroup key={group.letter} group={group} />
           ))}
 

@@ -5,6 +5,8 @@ import { useAppStore } from '../../store/store';
 function PatientsGroup({ group }) {
   const { setSelectedPatientId } = useAppStore();
 
+  console.log(group);
+
   return (
     <article className="article">
       <div className="article_head">
@@ -25,7 +27,7 @@ function PatientsGroup({ group }) {
               </div>
               <div className="events_item_info">
                 <a onClick={() => setSelectedPatientId(patient.id)}>
-                  {patient.name}{' '}
+                  {patient.lastName} {patient.name} {patient.secondName}
                 </a>
               </div>
               <span className="events_item_timestamp">
