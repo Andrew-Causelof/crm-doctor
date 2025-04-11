@@ -30,5 +30,5 @@ AlphabetFilter.propTypes = {
       available: PropTypes.bool,
     })
   ).isRequired,
-  onSelect: PropTypes.func.isRequired,
+  onSelect: PropTypes.func,
 };

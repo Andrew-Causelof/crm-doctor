@@ -4,7 +4,7 @@ import Chats from './MainContent/Chats';
 import Rules from './MainContent/Rules';
 import Recomendation from './MainContent/Recomendation';
 import Breadcrumbs from './common/Breadcrumbs';
-import { useAppStore } from '../store';
+import { useAppStore } from '../store/store';
 
 export default function MainContent() {
   const { appData, setAppData } = useAppStore();

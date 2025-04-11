@@ -1,8 +1,7 @@
 import React from 'react';
-import Breadcrumbs from '../common/Breadcrumbs';
-import { useAppStore } from '../../store';
+import { useAppStore } from '../../store/store';
 import PatientDetails from './PatientDetails';
-import PatientsList from './PatientsList ';
+import PatientsList from './PatientsList';
 
 function Patients() {
   const { selectedPatientId } = useAppStore();

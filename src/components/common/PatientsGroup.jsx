@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useAppStore } from '../../store';
+import { useAppStore } from '../../store/store';
 
 function PatientsGroup({ group }) {
   const { setSelectedPatientId } = useAppStore();
@@ -47,7 +47,7 @@ PatientsGroup.propTypes = {
         id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
         messages: PropTypes.number.isRequired,
-        link: PropTypes.string.isRequired,
+        link: PropTypes.string,
       })
     ).isRequired,
   }).isRequired,

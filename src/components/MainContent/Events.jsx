@@ -13,6 +13,8 @@ function Events() {
     setEvents(eventsData);
   }, []);
 
+  console.log(events);
+
   return (
     <main className="main main-full">
       <div className="content">

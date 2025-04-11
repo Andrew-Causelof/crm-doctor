@@ -2,38 +2,44 @@ import React from 'react';
 
 function Patient() {
   return (
-    <form class="main">
-      <div class="content">
-        <div class="content_head">
-          <div class="breadcrumbs">
-            <a href="events.html" class="breadcrumbs_link">
+    <form className="main">
+      <div className="content">
+        <div className="content_head">
+          <div className="breadcrumbs">
+            <a href="events.html" className="breadcrumbs_link">
               Личный кабинет
             </a>
-            <span class="breadcrumbs_sep">/</span>
-            <a href="clients.html" class="breadcrumbs_link">
+            <span className="breadcrumbs_sep">/</span>
+            <a href="clients.html" className="breadcrumbs_link">
               Все пациенты
             </a>
-            <span class="breadcrumbs_sep">/</span>
-            <span class="breadcrumbs_text">Добронравов Олег Робертович</span>
+            <span className="breadcrumbs_sep">/</span>
+            <span className="breadcrumbs_text">
+              Добронравов Олег Робертович
+            </span>
           </div>
-          <div class="title title-page">Добронравов Олег Робертович</div>
+          <div className="title title-page">Добронравов Олег Робертович</div>
         </div>
-        <div class="content_body">
-          <div class="dropdown">
-            <div class="dropdown_head">
-              <div class="dropdown_name">Данные об операциях</div>
-              <div class="dropdown_icon"></div>
+        <div className="content_body">
+          <div className="dropdown">
+            <div className="dropdown_head">
+              <div className="dropdown_name">Данные об операциях</div>
+              <div className="dropdown_icon"></div>
             </div>
-            <div class="dropdown_body">
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Планируемая операция</div>
+            <div className="dropdown_body">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
+                    Планируемая операция
+                  </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control">
-                      <span class="control_title">Выбрать вид операции</span>
-                      <div class="select">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control">
+                      <span className="control_title">
+                        Выбрать вид операции
+                      </span>
+                      <div className="select">
                         <button
                           type="button"
                           name="chronical-items"
@@ -41,95 +47,109 @@ function Patient() {
                           value="one two"
                           data-index="1"
                           data-type="multiple"
-                          class="select_toggle"
+                          className="select_toggle"
                         >
                           Выбрать один или несколько
                         </button>
-                        <div class="select_dropdown">
-                          <ul class="select_options">
+                        <div className="select_dropdown">
+                          <ul className="select_options">
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="one"
                               data-index="0"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox1" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 1</span>
+                              <span className="select_option_text">
+                                Пункт 1
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="two"
                               data-index="1"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox2" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 2</span>
+                              <span className="select_option_text">
+                                Пункт 2
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="three"
                               data-index="2"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox3" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 3</span>
+                              <span className="select_option_text">
+                                Пункт 3
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="4"
                               data-index="4"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox4" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 4</span>
+                              <span className="select_option_text">
+                                Пункт 4
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="5"
                               data-index="5"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox5" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 5</span>
+                              <span className="select_option_text">
+                                Пункт 5
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="6"
                               data-index="6"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox6" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 6</span>
+                              <span className="select_option_text">
+                                Пункт 6
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="7"
                               data-index="7"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox7" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 7</span>
+                              <span className="select_option_text">
+                                Пункт 7
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -138,15 +158,17 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Прошлая операция</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Прошлая операция</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control">
-                      <span class="control_title">Выбрать вид операции</span>
-                      <div class="select select-success">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control">
+                      <span className="control_title">
+                        Выбрать вид операции
+                      </span>
+                      <div className="select select-success">
                         <button
                           type="button"
                           name="chronical-items"
@@ -154,95 +176,109 @@ function Patient() {
                           value="one two"
                           data-index="1"
                           data-type="multiple"
-                          class="select_toggle"
+                          className="select_toggle"
                         >
                           Выбрать один или несколько
                         </button>
-                        <div class="select_dropdown">
-                          <ul class="select_options">
+                        <div className="select_dropdown">
+                          <ul className="select_options">
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="one"
                               data-index="0"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox1" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 1</span>
+                              <span className="select_option_text">
+                                Пункт 1
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="two"
                               data-index="1"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox2" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 2</span>
+                              <span className="select_option_text">
+                                Пункт 2
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="three"
                               data-index="2"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox3" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 3</span>
+                              <span className="select_option_text">
+                                Пункт 3
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="4"
                               data-index="4"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox4" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 4</span>
+                              <span className="select_option_text">
+                                Пункт 4
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="5"
                               data-index="5"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox5" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 5</span>
+                              <span className="select_option_text">
+                                Пункт 5
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="6"
                               data-index="6"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox6" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 6</span>
+                              <span className="select_option_text">
+                                Пункт 6
+                              </span>
                             </li>
                             <li
-                              class="select_option"
+                              className="select_option"
                               data-select="option"
                               data-value="7"
                               data-index="7"
                             >
-                              <div class="checkbox_item">
+                              <div className="checkbox_item">
                                 <input type="checkbox" id="checkbox7" />
-                                <span class="checkbox_item_visible"></span>
+                                <span className="checkbox_item_visible"></span>
                               </div>
-                              <span class="select_option_text">Пункт 7</span>
+                              <span className="select_option_text">
+                                Пункт 7
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -253,21 +289,21 @@ function Patient() {
               </article>
             </div>
           </div>
-          <div class="dropdown">
-            <div class="dropdown_head">
-              <div class="dropdown_name">Информация о пациенте</div>
-              <div class="dropdown_icon"></div>
+          <div className="dropdown">
+            <div className="dropdown_head">
+              <div className="dropdown_name">Информация о пациенте</div>
+              <div className="dropdown_icon"></div>
             </div>
-            <div class="dropdown_body">
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Основная информация</div>
+            <div className="dropdown_body">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Основная информация</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control">
-                      <span class="control_title">Ваш пол</span>
-                      <div class="checkbox">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control">
+                      <span className="control_title">Ваш пол</span>
+                      <div className="checkbox">
                         <label for="male" tabindex="0">
                           <input
                             id="male"
@@ -275,20 +311,20 @@ function Patient() {
                             name="sex"
                             value="male"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Мужской</span>
                         </label>
                         <label for="fem" tabindex="0">
                           <input id="fem" type="radio" name="sex" value="fem" />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Женский</span>
                         </label>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-grid">
-                    <div class="control">
-                      <label class="control_title" for="lastname">
+                  <div className="form_controls form_controls-grid">
+                    <div className="control">
+                      <label className="control_title" for="lastname">
                         Фамилия
                       </label>
                       <input
@@ -298,8 +334,8 @@ function Patient() {
                         placeholder="Ваша фамилия..."
                       />
                     </div>
-                    <div class="control">
-                      <label class="control_title" for="firstname">
+                    <div className="control">
+                      <label className="control_title" for="firstname">
                         Имя
                       </label>
                       <input
@@ -309,8 +345,8 @@ function Patient() {
                         placeholder="Ваше имя..."
                       />
                     </div>
-                    <div class="control">
-                      <label class="control_title" for="thirdname">
+                    <div className="control">
+                      <label className="control_title" for="thirdname">
                         Отчество
                       </label>
                       <input
@@ -321,7 +357,7 @@ function Patient() {
                       />
                     </div>
                     <label
-                      class="control_title control control-date"
+                      className="control_title control control-date"
                       for="birthday"
                     >
                       Дата рождения
@@ -332,8 +368,8 @@ function Patient() {
                         placeholder="Выбрать дату"
                       />
                     </label>
-                    <div class="control">
-                      <label class="control_title" for="length">
+                    <div className="control">
+                      <label className="control_title" for="length">
                         Рост, см
                       </label>
                       <input
@@ -343,8 +379,8 @@ function Patient() {
                         placeholder="Укажите ваш рост"
                       />
                     </div>
-                    <div class="control">
-                      <label class="control_title" for="weight">
+                    <div className="control">
+                      <label className="control_title" for="weight">
                         Вес, кг
                       </label>
                       <input
@@ -357,14 +393,16 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Контактная информация</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
+                    Контактная информация
+                  </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls form_controls-grid">
-                    <div class="control">
-                      <label class="control_title" for="phone">
+                <div className="article_body">
+                  <div className="form_controls form_controls-grid">
+                    <div className="control">
+                      <label className="control_title" for="phone">
                         Телефон
                       </label>
                       <input
@@ -374,8 +412,8 @@ function Patient() {
                         placeholder="+7 (___) ___ - __ - __"
                       />
                     </div>
-                    <div class="control">
-                      <label class="control_title" for="phone2">
+                    <div className="control">
+                      <label className="control_title" for="phone2">
                         Доп. телефон (при наличии)
                       </label>
                       <input
@@ -385,8 +423,8 @@ function Patient() {
                         placeholder="+7 (___) ___ - __ - __"
                       />
                     </div>
-                    <div class="control">
-                      <label class="control_title" for="email">
+                    <div className="control">
+                      <label className="control_title" for="email">
                         Электронная почта
                       </label>
                       <input
@@ -399,21 +437,21 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Личные документы</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Личные документы</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls form_controls-grid">
-                    <div class="control">
+                <div className="article_body">
+                  <div className="form_controls form_controls-grid">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="polis"
                       >
                         Номер страхового полиса
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -428,15 +466,15 @@ function Patient() {
                         placeholder="Введите 16 цифр полиса..."
                       />
                     </div>
-                    <div class="control">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="polis-reg"
                       >
                         Регион полиса
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -451,15 +489,15 @@ function Patient() {
                         placeholder="Выберите регион полиса..."
                       />
                     </div>
-                    <div class="control">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="snils"
                       >
                         СНИЛС
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -474,15 +512,15 @@ function Patient() {
                         placeholder="Введите номер СНИЛС..."
                       />
                     </div>
-                    <div class="control">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="passport"
                       >
                         Серия и номер паспорта
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -498,7 +536,7 @@ function Patient() {
                       />
                     </div>
                     <label
-                      class="control_title control control-date"
+                      className="control_title control control-date"
                       for="passport-date"
                     >
                       Дата выдачи
@@ -509,15 +547,15 @@ function Patient() {
                         placeholder="Выбрать дату"
                       />
                     </label>
-                    <div class="control">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="passport-from"
                       >
                         Кем выдан
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -532,15 +570,15 @@ function Patient() {
                         placeholder="Введите кем выдано..."
                       />
                     </div>
-                    <div class="control">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="city"
                       >
                         Город регистрации
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -555,15 +593,15 @@ function Patient() {
                         placeholder="Город..."
                       />
                     </div>
-                    <div class="control control-x2">
+                    <div className="control control-x2">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="address"
                       >
                         Адрес регистрации
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -583,27 +621,27 @@ function Patient() {
               </article>
             </div>
           </div>
-          <div class="dropdown active">
-            <div class="dropdown_head">
-              <div class="dropdown_name">Медицинская информация</div>
-              <div class="dropdown_icon"></div>
+          <div className="dropdown active">
+            <div className="dropdown_head">
+              <div className="dropdown_name">Медицинская информация</div>
+              <div className="dropdown_icon"></div>
             </div>
-            <div class="dropdown_body">
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Жалобы</div>
+            <div className="dropdown_body">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Жалобы</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="comment"
                       >
                         Жалобы на здоровье
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -620,18 +658,20 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Хронические заболевания</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
+                    Хронические заболевания
+                  </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Есть ли у вас хронические заболевания?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -639,7 +679,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="chronical-yeah" tabindex="0">
                           <input
                             id="chronical-yeah"
@@ -647,7 +687,7 @@ function Patient() {
                             name="chronical"
                             value="chronical-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Есть</span>
                         </label>
                         <label for="chronical-no" tabindex="0">
@@ -657,45 +697,45 @@ function Patient() {
                             name="chronical"
                             value="chronical-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
-                      <div class="select">
-                        <div class="select_input">
+                      <div className="select">
+                        <div className="select_input">
                           <button type="button">
                             Выбрать один или несколько{' '}
-                            <span class="select_arrow"></span>
+                            <span className="select_arrow"></span>
                           </button>
                         </div>
                       </div>
-                      <div class="selected">
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">
+                      <div className="selected">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">
                               Сахарный диабет
                             </span>
-                            <button type="button" class="selected_item_del">
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий к заболеванию
                             </button>
                           </div>
                         </div>
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">
                               Сахарный диабет
                             </span>
-                            <button type="button" class="selected_item_del">
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий к заболеванию
                             </button>
                           </div>
@@ -705,18 +745,18 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Приём медикаментов</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Приём медикаментов</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Принимали ли ранее медикаменты
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -724,7 +764,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="chronical-yeah" tabindex="0">
                           <input
                             id="chronical-yeah"
@@ -732,7 +772,7 @@ function Patient() {
                             name="chronical"
                             value="chronical-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Есть</span>
                         </label>
                         <label for="chronical-no" tabindex="0">
@@ -742,28 +782,28 @@ function Patient() {
                             name="chronical"
                             value="chronical-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
-                      <div class="select">
-                        <div class="select_input">
+                      <div className="select">
+                        <div className="select_input">
                           <button type="button">
                             Выбрать один или несколько{' '}
-                            <span class="select_arrow"></span>
+                            <span className="select_arrow"></span>
                           </button>
                         </div>
                       </div>
-                      <div class="selected">
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Аспирин</span>
-                            <button type="button" class="selected_item_del">
+                      <div className="selected">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">Аспирин</span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий
                             </button>
                           </div>
@@ -773,18 +813,18 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Предыдущие операции</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Предыдущие операции</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Были у вас ранее операции?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -792,7 +832,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="chronical-yeah" tabindex="0">
                           <input
                             id="chronical-yeah"
@@ -800,7 +840,7 @@ function Patient() {
                             name="chronical"
                             value="chronical-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Есть</span>
                         </label>
                         <label for="chronical-no" tabindex="0">
@@ -810,12 +850,12 @@ function Patient() {
                             name="chronical"
                             value="chronical-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
                       <textarea
-                        class="textarea textarea-sm"
+                        className="textarea textarea-sm"
                         name="comment2"
                         placeholder="Напишите пожалуйста какие операции у вас были..."
                       ></textarea>
@@ -823,20 +863,20 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
                     Аллергии и лекарственная непереносимость
                   </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         У вас есть аллергия или лекарственная неперносимость?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -844,7 +884,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="alergy-yeah" tabindex="0">
                           <input
                             id="alergy-yeah"
@@ -852,7 +892,7 @@ function Patient() {
                             name="alergy"
                             value="alergy-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Да</span>
                         </label>
                         <label for="alergy-no" tabindex="0">
@@ -862,45 +902,49 @@ function Patient() {
                             name="alergy"
                             value="alergy-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
-                      <div class="select">
-                        <div class="select_input">
+                      <div className="select">
+                        <div className="select_input">
                           <button type="button">
                             Выбрать один или несколько{' '}
-                            <span class="select_arrow"></span>
+                            <span className="select_arrow"></span>
                           </button>
                         </div>
                       </div>
-                      <div class="selected">
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Антибиотики</span>
-                            <button type="button" class="selected_item_del">
+                      <div className="selected">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">
+                              Антибиотики
+                            </span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Удалить комментарий
                             </button>
                             <textarea
-                              class="textarea textarea-sm"
+                              className="textarea textarea-sm"
                               placeholder="Прием препаратов должен осуществляться строго в соответствии с рекомендациями врача. Важно соблюдать дозировку, время приема и длительность курса"
                             ></textarea>
                           </div>
                         </div>
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Анестетики</span>
-                            <button type="button" class="selected_item_del">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">
+                              Анестетики
+                            </span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий
                             </button>
                           </div>
@@ -910,20 +954,20 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
                     Инфекционные заболевания
                   </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Были ли или есть у вас инфекционные заболевания?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -931,7 +975,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="infection-yeah" tabindex="0">
                           <input
                             id="infection-yeah"
@@ -939,7 +983,7 @@ function Patient() {
                             name="infection"
                             value="infection-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Да</span>
                         </label>
                         <label for="infection-no" tabindex="0">
@@ -949,41 +993,43 @@ function Patient() {
                             name="infection"
                             value="infection-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
-                      <div class="select">
-                        <div class="select_input">
+                      <div className="select">
+                        <div className="select_input">
                           <button type="button">
                             Выбрать один или несколько{' '}
-                            <span class="select_arrow"></span>
+                            <span className="select_arrow"></span>
                           </button>
                         </div>
                       </div>
-                      <div class="selected">
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Туберкулёз</span>
-                            <button type="button" class="selected_item_del">
+                      <div className="selected">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">
+                              Туберкулёз
+                            </span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий к заболеванию
                             </button>
                           </div>
                         </div>
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Гепатит</span>
-                            <button type="button" class="selected_item_del">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">Гепатит</span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий к заболеванию
                             </button>
                           </div>
@@ -993,23 +1039,23 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
                     Наследственные заболевания
                   </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control">
                       <label
-                        class="control_title control_title-notice"
+                        className="control_title control_title-notice"
                         for="comment"
                       >
                         Есть ли у вас наследственные заболевания?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1026,18 +1072,18 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Вредные привычки</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Вредные привычки</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Есть ли у вас вредные привычки?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1045,7 +1091,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="habbits-yeah" tabindex="0">
                           <input
                             id="habbits-yeah"
@@ -1053,7 +1099,7 @@ function Patient() {
                             name="habbits"
                             value="habbits-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Да</span>
                         </label>
                         <label for="habbits-no" tabindex="0">
@@ -1063,41 +1109,43 @@ function Patient() {
                             name="habbits"
                             value="habbits-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
-                      <div class="select">
-                        <div class="select_input">
+                      <div className="select">
+                        <div className="select_input">
                           <button type="button">
                             Выбрать один или несколько{' '}
-                            <span class="select_arrow"></span>
+                            <span className="select_arrow"></span>
                           </button>
                         </div>
                       </div>
-                      <div class="selected">
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Курение</span>
-                            <button type="button" class="selected_item_del">
+                      <div className="selected">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">Курение</span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий к заболеванию
                             </button>
                           </div>
                         </div>
-                        <div class="selected_item">
-                          <div class="selected_item_head">
-                            <span class="selected_item_title">Алкоголь</span>
-                            <button type="button" class="selected_item_del">
+                        <div className="selected_item">
+                          <div className="selected_item_head">
+                            <span className="selected_item_title">
+                              Алкоголь
+                            </span>
+                            <button type="button" className="selected_item_del">
                               Удалить
                             </button>
                           </div>
-                          <div class="selected_item_body">
-                            <button type="button" class="selected_item_add">
+                          <div className="selected_item_body">
+                            <button type="button" className="selected_item_add">
                               Добавить комментарий к заболеванию
                             </button>
                           </div>
@@ -1107,18 +1155,18 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Беременность</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Беременность</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Беременны в настоящий момент?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1126,7 +1174,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="pregnant-yeah" tabindex="0">
                           <input
                             id="pregnant-yeah"
@@ -1134,7 +1182,7 @@ function Patient() {
                             name="pregnant"
                             value="pregnant-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Да</span>
                         </label>
                         <label for="pregnant-no" tabindex="0">
@@ -1144,7 +1192,7 @@ function Patient() {
                             name="pregnant"
                             value="pregnant-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
@@ -1152,18 +1200,18 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Больничный лист</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Больничный лист</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls">
-                    <div class="control control-g24">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls">
+                    <div className="control control-g24">
+                      <span className="control_title control_title-notice">
                         Нужен ли больничный лист?
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1171,7 +1219,7 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="checkbox">
+                      <div className="checkbox">
                         <label for="list-yeah" tabindex="0">
                           <input
                             id="list-yeah"
@@ -1179,7 +1227,7 @@ function Patient() {
                             name="list"
                             value="list-yeah"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Да</span>
                         </label>
                         <label for="list-no" tabindex="0">
@@ -1189,7 +1237,7 @@ function Patient() {
                             name="list"
                             value="list-no"
                           />
-                          <div class="checkbox_cell"></div>
+                          <div className="checkbox_cell"></div>
                           <span>Нет</span>
                         </label>
                       </div>
@@ -1199,24 +1247,24 @@ function Patient() {
               </article>
             </div>
           </div>
-          <div class="dropdown active">
-            <div class="dropdown_head">
-              <div class="dropdown_name">Документы и анализы пациента</div>
-              <div class="dropdown_icon"></div>
+          <div className="dropdown active">
+            <div className="dropdown_head">
+              <div className="dropdown_name">Документы и анализы пациента</div>
+              <div className="dropdown_icon"></div>
             </div>
-            <div class="dropdown_body">
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Основные документы</div>
+            <div className="dropdown_body">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">Основные документы</div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files control-files-err">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files control-files-err">
+                      <span className="control_title control_title-notice">
                         Копия паспорта
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1224,72 +1272,72 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="passport-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                           multiple
                         />
                         <label
                           for="passport-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
-                      <div class="alert">
-                        <span class="alert_icon"></span>
-                        <p class="alert_text">
+                      <div className="alert">
+                        <span className="alert_icon"></span>
+                        <p className="alert_text">
                           Загруженные документы не соответствует введенным
                           данным
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Страховой полис
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1297,46 +1345,46 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="polis-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="polis-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         СНИЛС
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1344,34 +1392,34 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="snils-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="snils-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
@@ -1379,26 +1427,28 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">Лабораторные анализы</div>
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
+                    Лабораторные анализы
+                  </div>
                 </div>
-                <div class="article_body">
-                  <div class="alert alert-v2">
-                    <p class="alert_text">
+                <div className="article_body">
+                  <div className="alert alert-v2">
+                    <p className="alert_text">
                       Основные лабораторные исследования (срок действия – 14
                       дней, если не указано иное)
                     </p>
-                    <span class="alert_icon"></span>
+                    <span className="alert_icon"></span>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Общий анализ крови с лейкоцитарной формулой и
                         тромбоцитами + СОЭ
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1406,58 +1456,58 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="passport-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="passport-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Коагулограмма
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
                             </p>
                           </div>
                         </div>
-                        <div class="control_title_actions">
-                          <span class="print_btn"></span>
-                          <span class="pdf_btn"></span>
+                        <div className="control_title_actions">
+                          <span className="print_btn"></span>
+                          <span className="pdf_btn"></span>
                         </div>
                       </span>
-                      <ul class="control_list">
+                      <ul className="control_list">
                         <li>МНО (международное нормализованное отношение)</li>
                         <li>
                           АЧТВ (активированное частичное тромбопластиновое
@@ -1468,58 +1518,58 @@ function Patient() {
                         <li>Тромбиновое время</li>
                         <li>Д-димер</li>
                       </ul>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="passport-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="passport-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Биохимический анализ крови
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
                             </p>
                           </div>
                         </div>
-                        <div class="control_title_actions">
-                          <span class="print_btn"></span>
-                          <span class="pdf_btn"></span>
+                        <div className="control_title_actions">
+                          <span className="print_btn"></span>
+                          <span className="pdf_btn"></span>
                         </div>
                       </span>
-                      <ul class="control_list">
+                      <ul className="control_list">
                         <li>Глюкоза</li>
                         <li>Общий белок</li>
                         <li>Билирубин (общий, прямой, непрямой)</li>
@@ -1530,104 +1580,104 @@ function Patient() {
                         <li>Калий, натрий, хлор</li>
                         <li>Альбумин</li>
                       </ul>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="passport-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="passport-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Инфекционно-иммунологический анализ крови (pdf / jpg /
                         png)
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
                             </p>
                           </div>
                         </div>
-                        <div class="control_title_actions">
-                          <span class="print_btn"></span>
-                          <span class="pdf_btn"></span>
+                        <div className="control_title_actions">
+                          <span className="print_btn"></span>
+                          <span className="pdf_btn"></span>
                         </div>
                       </span>
-                      <ul class="control_list">
+                      <ul className="control_list">
                         <li>RW (сифилис) (3 месяца)</li>
                         <li>Hbs-антиген (гепатит В) (3 месяца)</li>
                         <li>Анти-HCV (гепатит С) (3 месяца)</li>
                         <li>ВИЧ (3 месяца)</li>
                       </ul>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="passport-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="passport-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Определение группы крови и резус-фактора (бессрочно)
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1635,47 +1685,47 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="polis-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="polis-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Фенотипирование эритроцитов (бессрочно) (pdf / jpg /
                         png)
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1683,46 +1733,46 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="snils-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="snils-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         Общий анализ мочи
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1730,34 +1780,34 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="snils-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="snils-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
@@ -1765,22 +1815,22 @@ function Patient() {
                   </div>
                 </div>
               </article>
-              <article class="article">
-                <div class="article_head">
-                  <div class="title title-article">
+              <article className="article">
+                <div className="article_head">
+                  <div className="title title-article">
                     Специальные лабораторные исследования:
                   </div>
                 </div>
-                <div class="article_body">
-                  <div class="form_controls form_controls-files">
-                    <div class="control control-files">
-                      <span class="control_title control_title-notice">
+                <div className="article_body">
+                  <div className="form_controls form_controls-files">
+                    <div className="control control-files">
+                      <span className="control_title control_title-notice">
                         ПЦР на COVID-19 из носоглотки и ротоглотки (не ранее чем
                         за 1-2 дня до госпитализации, результат действителен 48
                         часов)
-                        <div class="control_notice">
-                          <span class="control_notice_icon"></span>
-                          <div class="control_notice_content">
+                        <div className="control_notice">
+                          <span className="control_notice_icon"></span>
+                          <div className="control_notice_content">
                             <p>
                               Далеко-далеко за словесными горами в стране
                               гласных, и согласных живут рыбные тексты.
@@ -1788,34 +1838,34 @@ function Patient() {
                           </div>
                         </div>
                       </span>
-                      <div class="upload">
+                      <div className="upload">
                         <input
                           id="passport-files"
                           type="file"
-                          class="upload_input"
+                          className="upload_input"
                         />
                         <label
                           for="passport-files"
                           tabindex="0"
-                          class="upload_btn btn btn-main"
+                          className="upload_btn btn btn-main"
                         >
                           <span></span> Загрузить
                         </label>
-                        <div class="upload_info">
+                        <div className="upload_info">
                           <p>Максимальный размер файла: 10 МБ.</p>
                           <p>
                             Допустимые форматы: .jpeg, .png, .pdf, .doc, .docx
                           </p>
                         </div>
                       </div>
-                      <div class="files">
-                        <div class="files_item">
-                          <span class="files_item_icon"></span>
-                          <span class="files_item_title">
+                      <div className="files">
+                        <div className="files_item">
+                          <span className="files_item_icon"></span>
+                          <span className="files_item_title">
                             Наименование документа.pdf
                           </span>
-                          <div class="files_item_actions">
-                            <span class="files_item_del">Удалить</span>
+                          <div className="files_item_actions">
+                            <span className="files_item_del">Удалить</span>
                           </div>
                         </div>
                       </div>
@@ -1827,42 +1877,46 @@ function Patient() {
           </div>
         </div>
       </div>
-      <aside class="aside aside-right">
-        <div class="widget">
-          <div class="widget_title widget_title-sm">Информация о пациенте</div>
-          <div class="progress progress-dark" data-progress="about">
-            <div class="progress_bar">
-              <span class="progress_line" style="width: 50%"></span>
+      <aside className="aside aside-right">
+        <div className="widget">
+          <div className="widget_title widget_title-sm">
+            Информация о пациенте
+          </div>
+          <div className="progress progress-dark" data-progress="about">
+            <div className="progress_bar">
+              <span className="progress_line" style="width: 50%"></span>
             </div>
-            <p class="progress_text">
-              Заполнено <span class="progress_value">50%</span>
+            <p className="progress_text">
+              Заполнено <span className="progress_value">50%</span>
             </p>
           </div>
-          <div class="widget_title widget_title-sm">Медицинская информация</div>
-          <div class="progress progress-dark" data-progress="about">
-            <div class="progress_bar">
-              <span class="progress_line" style="width: 74%"></span>
+          <div className="widget_title widget_title-sm">
+            Медицинская информация
+          </div>
+          <div className="progress progress-dark" data-progress="about">
+            <div className="progress_bar">
+              <span className="progress_line" style="width: 74%"></span>
             </div>
-            <p class="progress_text">
-              Заполнено <span class="progress_value">74%</span>
+            <p className="progress_text">
+              Заполнено <span className="progress_value">74%</span>
             </p>
           </div>
-          <div class="widget_title widget_title-sm">
+          <div className="widget_title widget_title-sm">
             Документы и анализы пациента
           </div>
-          <div class="progress progress-dark" data-progress="about">
-            <div class="progress_bar">
-              <span class="progress_line" style="width: 20%"></span>
+          <div className="progress progress-dark" data-progress="about">
+            <div className="progress_bar">
+              <span className="progress_line" style="width: 20%"></span>
             </div>
-            <p class="progress_text">
-              Заполнено <span class="progress_value">20%</span>
+            <p className="progress_text">
+              Заполнено <span className="progress_value">20%</span>
             </p>
           </div>
-          <div class="widget_actions widget_actions-col">
-            <button class="btn btn-main btn-fw widget_print">
-              Распечатать <span class="widget_print"></span>
+          <div className="widget_actions widget_actions-col">
+            <button className="btn btn-main btn-fw widget_print">
+              Распечатать <span className="widget_print"></span>
             </button>
-            <a download="" href="info.html" class="btn btn-main btn-fw">
+            <a download="" href="info.html" className="btn btn-main btn-fw">
               Скачать в формате PDF
             </a>
           </div>

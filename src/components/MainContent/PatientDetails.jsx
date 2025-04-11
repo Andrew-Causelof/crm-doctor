@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { useAppStore } from '../../store';
+import { useAppStore } from '../../store/store';
 import { API_BASE_URL } from '../../config';
 
 function PatientDetails() {
