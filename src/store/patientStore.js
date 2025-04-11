@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import axios from 'axios';
 import { API_BASE_URL } from '../config';
 
-export const usePatientStore = create((set) => ({
+export const usePatientStore = create((set, get) => ({
   patients: [], // Список пациентов
   letters: [], // Список букв для AlphabetFilter
   pagination: {
@@ -15,7 +15,7 @@ export const usePatientStore = create((set) => ({
   loading: false,
   error: null,
 
-  fetchPatients: async (page = 1, limit = 10, letter = '') => {
+  fetchPatients: async (page = 1, limit = 10, letter = '', append = false) => {
     set({ loading: true, error: null });
 
     try {
@@ -25,12 +25,12 @@ export const usePatientStore = create((set) => ({
 
       const { patients, pagination, letters } = response.data.success;
 
-      set({
-        patients: patients,
-        pagination: pagination,
-        letters: letters,
+      set((state) => ({
+        patients: append ? [...state.patients, ...patients] : patients, // если append=true → добавляем
+        pagination,
+        letters,
         loading: false,
-      });
+      }));
     } catch (error) {
       console.error('Ошибка загрузки пациентов:', error);
       set({ error: 'Ошибка загрузки данных', loading: false });
@@ -43,12 +43,11 @@ export const usePatientStore = create((set) => ({
       pagination: { ...state.pagination, page: 1 },
     }));
 
-    await usePatientStore.getState().fetchPatients(1, 10, letter);
+    await usePatientStore.getState().fetchPatients(1, 10, letter, false);
   },
 
   changePage: async (page) => {
-    const { pagination, selectedLetter, fetchPatients } =
-      usePatientStore.getState();
-    await fetchPatients(page, pagination.limit, selectedLetter);
+    const { pagination, selectedLetter, fetchPatients } = get();
+    await fetchPatients(page, pagination.limit, selectedLetter, false); // ← append = true
   },
 }));

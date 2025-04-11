@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { usePatientStore } from '../../store/patientStore';
 
 const alphabet = [
   'А',
@@ -32,18 +33,23 @@ const alphabet = [
   'Я',
 ];
 
-function AlphabetFilter({ availableLetters = [], selectedLetter, onSelect }) {
+function AlphabetFilter() {
+  const { letters, selectedLetter, selectLetter } = usePatientStore();
+
+  const handleLetterClick = (letter) => {
+    selectLetter(letter); // Просто вызываем selectLetter
+  };
+
   return (
     <div className="page_actions_chars">
       {alphabet.map((letter) => (
         <button
           key={letter}
           className={classNames('page_actions_chars_item', {
-            'page_actions_chars_item-current': selectedLetter === letter,
-            'page_actions_chars_item-notification':
-              availableLetters.includes(letter),
+            'page_actions_chars_item-notification': letters.includes(letter), // Доступные буквы
+            'page_actions_chars_item-current': selectedLetter === letter, // Активная буква
           })}
-          onClick={() => onSelect(letter)}
+          onClick={() => handleLetterClick(letter)}
         >
           {letter}
         </button>
@@ -61,6 +67,6 @@ AlphabetFilter.propTypes = {
       selected: PropTypes.bool,
       available: PropTypes.bool,
     })
-  ).isRequired,
+  ),
   onSelect: PropTypes.func,
 };

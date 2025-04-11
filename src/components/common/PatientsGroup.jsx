@@ -5,8 +5,6 @@ import { useAppStore } from '../../store/store';
 function PatientsGroup({ group }) {
   const { setSelectedPatientId } = useAppStore();
 
-  console.log(group);
-
   return (
     <article className="article">
       <div className="article_head">
@@ -48,10 +46,10 @@ PatientsGroup.propTypes = {
       PropTypes.shape({
         id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
-        messages: PropTypes.number.isRequired,
+        messages: PropTypes.number,
         link: PropTypes.string,
       })
-    ).isRequired,
+    ),
   }).isRequired,
 };
 
