@@ -1,7 +1,12 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-export default function Selector({ options, type = 'single', onChange, placeholder }) {
+export default function Selector({
+  options,
+  type = 'single',
+  onChange,
+  placeholder,
+}) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedItems, setSelectedItems] = useState([]);
 
@@ -49,12 +54,8 @@ export default function Selector({ options, type = 'single', onChange, placehold
   };
 
   return (
-    <div className="select">
-      <button
-        type="button"
-        className="select_toggle"
-        onClick={toggleDropdown}
-      >
+    <div className={`select ${isDropdownOpen ? 'show' : ''}`}>
+      <button type="button" className="select_toggle" onClick={toggleDropdown}>
         {selectedItems.length > 0 ? selectedItems.join(', ') : placeholder}
       </button>
 
@@ -64,7 +65,9 @@ export default function Selector({ options, type = 'single', onChange, placehold
             {options.map((option, index) => (
               <li
                 key={index}
-                className={`select_option ${selectedItems.includes(option) ? 'select_option-selected' : ''}`}
+                className={`select_option ${
+                  selectedItems.includes(option) ? 'select_option-selected' : ''
+                }`}
                 onClick={() => handleSelect(option)}
               >
                 <div className="checkbox_item">
@@ -82,9 +85,7 @@ export default function Selector({ options, type = 'single', onChange, placehold
         </div>
       )}
 
-      <div className="selected">
-        {renderSelectedItems()}
-      </div>
+      <div className="selected">{renderSelectedItems()}</div>
     </div>
   );
 }

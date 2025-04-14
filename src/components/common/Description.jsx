@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { useDescriptionStore } from '../../store';
+import { useDescriptionStore } from '../../store/patientStore';
 import PropTypes from 'prop-types';
 
 export default function Description({ tag, title = '' }) {
-
   const [description, setDescription] = useState(null);
 
   const descriptions = useDescriptionStore((state) => state.descriptions); // Получаем все описания
@@ -28,7 +27,6 @@ export default function Description({ tag, title = '' }) {
     </span>
   );
 }
-
 
 Description.propTypes = {
   tag: PropTypes.string.isRequired,

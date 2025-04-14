@@ -12,13 +12,16 @@ import Loader from '../common/Loader';
 function PatientsList() {
   const {
     fetchPatients,
-    patients,
     pagination,
     loading,
     letters,
     selectedLetter,
     selectLetter,
+    getFilteredPatients,
+    searchQuery,
   } = usePatientStore();
+
+  const patients = getFilteredPatients();
 
   useEffect(() => {
     fetchPatients(); // Загружаем сразу при входе
@@ -64,7 +67,6 @@ function PatientsList() {
               selectedLetter={selectedLetter} // <- выбранная буква
               onSelect={selectLetter}
             />
-
             <EventsSearch />
           </div>
 
@@ -72,7 +74,7 @@ function PatientsList() {
             <PatientsGroup key={group.letter} group={group} />
           ))}
 
-          <PatientPagination />
+          {!searchQuery && <PatientPagination />}
         </div>
       </div>
     </main>
